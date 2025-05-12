@@ -1,4 +1,4 @@
-#Objetivo  
+# Objetivo  
 
 Implementar y comparar el funcionamiento de un sumador completo con acarreo en paralelo y un sumador completo con acarreo en serie, diseñados en VHDL y desplegados en una tarjeta FPGA Nexys 3, con el propósito de:  
 Comprender las diferencias estructurales y funcionales entre ambos tipos de sumadores.  
