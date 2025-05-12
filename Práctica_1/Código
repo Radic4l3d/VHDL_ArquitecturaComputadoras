@@ -1,0 +1,35 @@
+.text
+        
+    main:
+
+        #carga de datos a registros 
+        li x1, 4 #cargar 4 en x1
+        li x2, 2 #cargar 2 en x2
+    
+        
+        #Operaciones aritmeticas basicas
+        add x3, x1, x2 #6 = 4 + 2
+        sub x4, x1, x2 #2 = 4 - 2 
+        mul x5, x1, x2 #8 = 4 * 2 
+        div x6, x4, x2 #1 = 2 / 2
+        
+        #salto incondicional o subrutina
+        jal cuadrado
+
+        #Operaciones logicas
+        and x7, x0, x6 #0 = 0 & 1
+        or x8, x0, x6 #1 = 0 + 1
+        xor x9, x0, x6 #1 = 0 @ 1
+        
+        #corrimiento 
+        slli x10, x4, 2 #multiplicar {2}x(2^2) = 8
+        srli x11, x5, 2 #dividir {8}/(2^2) = 2
+        
+        #Salto condicional
+        beq x8, x9, cuadrado #si 1 = 1 ejecuta igual
+        
+ ecall
+ 
+        cuadrado:
+        mul x2, x2, x2  #Obtiene el cuadrado de x2
+        ret             #regresa al punto del que salto
