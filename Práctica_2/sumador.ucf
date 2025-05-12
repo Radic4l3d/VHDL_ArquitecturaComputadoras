@@ -1,0 +1,22 @@
+# Entradas A (SW0-SW3)
+NET "A[0]" LOC = "T10";   # SW0
+NET "A[1]" LOC = "T9";   # SW1
+NET "A[2]" LOC = "V9";   # SW2
+NET "A[3]" LOC = "M8";   # SW3
+
+# Entradas B (SW4-SW7)
+NET "B[0]" LOC = "N8";   # SW4
+NET "B[1]" LOC = "U8";   # SW5
+NET "B[2]" LOC = "V8";   # SW6
+NET "B[3]" LOC = "T5";   # SW7
+
+# Cin (SW8)
+NET "Cin" LOC = "B8";    # BUTTON
+
+# Salidas S (LED0 - LED3)
+NET "S[0]" LOC = "U16";  # LED0
+NET "S[1]" LOC = "V16";  # LED1
+NET "S[2]" LOC = "U15";  # LED2
+NET "S[3]" LOC = "V15";   # LED3
+# Cout (LED4)
+NET "Cout" LOC = "M11";  # LED4
