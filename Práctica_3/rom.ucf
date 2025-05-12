@@ -1,0 +1,16 @@
+## Clock signal
+NET "clk"   LOC = "V10";					#Bank = 35, Pin name = #IO_L12P_T1_MRCC_35,					Sch name = clk100mhz
+#NET "clk" TNM_NET = sys_clk_pin;
+#TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100 kHz HIGH 50%;
+
+## Direccion
+NET "direccion<0>"          LOC= "T10";
+NET "direccion<1>"          LOC= "T9";
+NET "direccion<2>"          LOC= "V9";
+NET "direccion<3>"          LOC= "M8";
+
+##Salidas S
+NET "data_out<0>"          LOC= "U16";
+NET "data_out<1>"          LOC= "V16";
+NET "data_out<2>"          LOC= "U15";
+NET "data_out<3>"          LOC= "V15";
